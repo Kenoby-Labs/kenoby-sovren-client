@@ -1,0 +1,17 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+coverage.html
+npm-debug.log
+newrelic_agent.log
+newrelic.js
+node_modules/
+.idea/

@@ -1,0 +1,11 @@
+{
+  "name": "sovren-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "^0.9.0",
+    "soap": "^0.8.0",
+    "xml2json": "^0.6.1"
+  },
+  "main" : "index.js",
+  "private" : true
+}
