@@ -1,8 +1,7 @@
 'use strict';
 
-var soap, fs, async, parser;
+var soap, async, parser;
 soap = require('soap');
-fs = require('fs');
 async = require('async');
 parser = require('xml2json');
 
@@ -14,7 +13,7 @@ module.exports = function sovrenClient(url, id, key) {
       client.ParsingService.ParsingServiceSoap12.ParseResume({'request' : {
         'AccountId'    : id,
         'ServiceKey'   : key,
-        'FileBytes'    : (new Buffer(fs.readFileSync(file))).toString('base64')
+        'FileBytes'    : (new Buffer(file)).toString('base64')
       }}, next);
     }, function (data, _, a, next) {
       next(null, parser.toJson(data.ParseResumeResult.Xml, {'object': true}).Resume.StructuredXMLResume);
