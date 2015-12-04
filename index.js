@@ -13,7 +13,7 @@ module.exports = function sovrenClient(url, id, key) {
       client.ParsingService.ParsingServiceSoap12.ParseResume({'request' : {
         'AccountId'     : id,
         'ServiceKey'    : key,
-        'FileBytes'     : file,//(new Buffer(file)).toString('base64'),
+        'FileBytes'     : (new Buffer(file)).toString('base64'),
         'Configuration' : '_100000_0_00000001_1101010110001101_1_0001111111111111111102011001101110000110000000000010000000100'
       }}, next);
     }, function (data, _, a, next) {
