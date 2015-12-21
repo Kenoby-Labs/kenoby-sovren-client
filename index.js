@@ -3,7 +3,7 @@
 var soap, async, parser;
 soap = require('soap');
 async = require('async');
-parser = require('xml2json');
+parser = require('./lib/xml2json');
 
 module.exports = function sovrenClient(url, id, key) {
   return function (file, next) {
