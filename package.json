@@ -6,6 +6,6 @@
     "soap": "^0.11.0",
     "xml2json": "^0.9.0"
   },
-  "main" : "index.js",
-  "private" : true
+  "main": "index.js",
+  "private": true
 }
