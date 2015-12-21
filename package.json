@@ -6,6 +6,10 @@
     "soap": "^0.11.0",
     "xml2json": "^0.9.0"
   },
-  "main" : "index.js",
-  "private" : true
+  "engines": {
+    "node": "0.12.0",
+    "npm": "2.5.1"
+  },
+  "main": "index.js",
+  "private": true
 }
