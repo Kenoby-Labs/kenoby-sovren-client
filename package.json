@@ -9,7 +9,7 @@
     "async": "^1.5.0",
     "q": "^1.4.1",
     "soap": "^0.11.1",
-    "xml2json": "^0.9.0"
+    "xml2js": "^0.4.15"
   },
   "main": "index.js",
   "private": true

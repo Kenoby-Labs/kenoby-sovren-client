@@ -4,7 +4,7 @@ var q, soap, async, parser;
 q = require('q');
 soap = require('soap');
 async = require('async');
-parser = require('xml2json');
+parser = require('xml2js').parseString;
 
 module.exports = function sovrenClient(url, id, key) {
   return function (file, next) {
@@ -23,7 +23,7 @@ module.exports = function sovrenClient(url, id, key) {
         }}, next);
       },
       function (data, _, a, next) {
-        next(null, parser.toJson(data.ParseResumeResult.Xml, {'object': true}));
+        parser(data.ParseResumeResult.Xml, next);
       }
     ], function (error, parsed) {
       if (error) {
