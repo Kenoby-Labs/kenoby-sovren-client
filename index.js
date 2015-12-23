@@ -31,6 +31,8 @@ module.exports = function sovrenClient(url, id, key) {
       } else {
         deferred.resolve(parsed);
       }
+
+      if (next) next(error, parsed);
     });
 
     return deferred.promise;
