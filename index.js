@@ -17,7 +17,8 @@ module.exports = function sovrenClient(url, id, key) {
         'Configuration' : '_100000_0_00000001_1101010110001101_1_0001111111111111111102011001101110000110000000000010000000100'
       }}, next);
     }, function (data, _, a, next) {
-      next(null, parser.toJson(data.ParseResumeResult.Xml, {'object': true}));
+      var json = parser.toJson(data.ParseResumeResult.Xml, {'object': true});
+      next(null, json);
     }], next);
   };
 };
