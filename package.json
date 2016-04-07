@@ -6,10 +6,10 @@
     "npm": "3.3.12"
   },
   "dependencies": {
-    "async": "^1.5.0",
+    "async": "^2.0.0-rc.2",
     "q": "^1.4.1",
-    "soap": "^0.11.1",
-    "xml2js": "^0.4.15"
+    "soap": "^0.13.0",
+    "xml2json": "^0.9.0"
   },
   "main": "index.js",
   "private": true
