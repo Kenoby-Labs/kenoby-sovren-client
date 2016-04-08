@@ -15,3 +15,4 @@ newrelic_agent.log
 newrelic.js
 node_modules/
 .idea/
+.DS_Store
