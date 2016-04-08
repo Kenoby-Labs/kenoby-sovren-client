@@ -1,15 +1,15 @@
 {
   "name": "sovren-client",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "engines": {
     "node": "5.1.0",
     "npm": "3.3.12"
   },
   "dependencies": {
-    "async": "^2.0.0-rc.2",
+    "async": "^2.0.0-rc.3",
     "q": "^1.4.1",
     "soap": "^0.13.0",
-    "xml2json": "^0.9.0"
+    "xml2js": "^0.4.16"
   },
   "main": "index.js",
   "private": true
